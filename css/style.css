@@ -7,25 +7,65 @@ body {
 	margin: 0 auto;
 	padding: 0 30px 10px;
 	padding-top: 25px;
-	border: 1px solid black;		
+	border: 1px solid black;	
+	box-sizing: border-box;	
 }
 
 .container {
 	text-align: center;
 }
 
-.container > nav {
-	padding: 1rem 0;
+.container h1 {
+	font-size: 35px;
+	text-shadow: 3px 3px whitesmoke;
 }
 
-.main-title {
+.container > nav {
+	padding: 1rem 0;
+}	
+
+.tools {	
+	width: 65vw;
+	height: 50vh;
 	text-align: center;
 }
 
-.tools {
-	position: relative;
-	left: 40px;
-	width: 150px;
+.main, 
+.main p {
+	padding: 1rem 0;
+}
+
+.map_title, 
+.map p, 
+.benefits_title {
+	text-align: center;
+	padding-top: .5rem;
+}
+
+.map_title, 
+.benefits_title {
+	font-size: 25px;
+}
+
+.map_content, 
+.benefits_content {
+	padding: 1rem 0;
+} 
+
+.itens::before {
+	content: "★";
+	line-height: 1.5;
+}
+
+footer {
+	text-align: center;
+	padding: 3rem 0;
+}
+
+@media screen and (min-width: 660px){
+	.tools {
+		;
+	}
 }
 
 
