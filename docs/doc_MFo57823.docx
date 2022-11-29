@@ -1,0 +1,9 @@
+This project is about a Barber Shop. 
+All the three pages have a pattern header including a background image, a heading and a navegation bar.
+
+In the first page has a image, a little contextualization about the company, a embedded map and a embedded video.
+The second page contains the products.
+The last page is a form with labels and inputs. When the user fill the form and submit a message will show the output.
+
+Repository: https://github.com/mateusAbdallah/finalProjectWebDevelopment
+

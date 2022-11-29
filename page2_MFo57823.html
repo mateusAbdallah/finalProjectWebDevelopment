@@ -2,104 +2,74 @@
 	<html>
 		<head>
 			<meta charset="utf-8">
-			<title>Contato - Barbearia Alura</title>
-
-			<link rel="stylesheet" href="reset.css">
-			<link rel="stylesheet" href="style.css">
+			<meta name="viewport" content="width=device-width">
+			<meta name="author" content="Mateus Fonseca">
+			<title>Barber Shop Douglas College. Always in the head and beard.</title>
+			<link rel="stylesheet" href="./css/global.css">
+			<link rel="stylesheet" href="./css/style.css">
+			<link rel="stylesheet" href="./css/page2_MFo57823.css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+			<script src="./js/script.js"></script>
 		</head>
-		<body>
 
+		<body>
+					
 			<header>
-				<div class="caixa">
-					<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+				<div class="container">
+					<h1>Barber Shop	Douglas College</h1>
 					<nav>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="produtos.html">Produtos</a></li>
-							<li><a href="contato.html">Contato</a></li>
-						</ul>
+							<li><a href="page3_MFo57823.html" target="_blank">Products</a></li>
+							<li><a href="page2_MFo57823.html" target="_blank">Contact</a></li>
+						</ul>				
 					</nav>
-				</div>				
+				</div>		
 			</header>
 
-			<main>
-				<form>
-					<label for="nomesobrenome">Nome e sobrenome</label>
-					<input type="text" id="nomesobrenome" class="input-padrao" required>
+			<article id="survey">				
+				<section>
+					<form action="" name="form" method="get">
+						<fieldset>
+							<legend>Book an appointment</legend>
+							<div class="divForm">
+								<label for="fullName">First and Last Name</label>
+								<input type="text" name="fullName" id="fullName" required>
+							</div>
+							<div class="divForm">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required placeholder="email@email.com">
+							</div>
+							<div class="divForm">
+								<label for="phoneNumber">Phone Number</label>
+								<input type="tel" name="phoneNumber" id="phoneNumber">
+							</div>
+							<div class="divForm">
+								<label>Which are your availability?</label>
+								<span>
+									<input type="radio" name="schedule" id="schedule1" value="Morning at 10">Morning at 10
+									<input type="radio" name="schedule" id="schedule2" value="Afternoon at 2">Afternoon at 2
+									<input type="radio" name="schedule" id="schedule3" value="Evening at 5">Evening at 5
+								</span>
+							</div>							
+							<div class="divForm">
+								<input type="button" name="submit" value="Submit form" onclick="processData(this.form)">
+							</div>							
+						</fieldset>
+					</form>
+				</section>
 
-					<label for="email">Email</label>
-					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-
-					<label for="telefone">Telefone</label>
-					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-
-					<label for="mensagem">Mensagem</label>
-					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-
+				<section>
 					<fieldset>
-						<legend>Como prefere o nosso contato?</legend>
-						<label for="radio-email">
-							<input type="radio" name="contato" value="email" id="radio-email">
-							Email
-						</label>
-
-						<label for="radio-telefone">
-							<input type="radio" name="contato" value="telefone" id="radio-telefone">
-							Telefone
-						</label>
-
-						<label for="radio-whatsapp">
-							<input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
-							WhatsApp							
-						</label>
+						<legend>Submitted Data</legend>
+						<p id="output"></p>
 					</fieldset>
-
-					<fieldset>
-						<legend>Qual horário prefere ser atendido?</legend>
-						<select>
-							<option>Manhã</option>
-							<option>Tarde</option>
-							<option>Noite</option>
-						</select>
-					</fieldset>
-
-					<label class="checkbox">
-						<input type="checkbox" checked>
-						Gostaria de receber nossas novidades por email?
-					</label>
-
-					<input type="submit" value="Enviar formulário" class="enviar">
-				</form>
-
-				<table>
-					<thead>
-						<tr>
-							<th>Dia</th>
-							<th>Horário</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Segunda</td>
-							<td>8h ~ 20h</td>							
-						</tr>
-						<tr>
-							<td>Quarta</td>
-							<td>8h ~ 20h</td>
-						</tr>
-						<tr>
-							<td>Sexta</td>
-							<td>8h ~ 20h</td>
-						</tr>
-					</tbody>					
-				</table>
-
-			</main>
-
+				</section>
+			</article>
 
 			<footer>
-			    <img src="logo-branco.png" alt="Logo da Barbearia Alura">
-			    <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
-			</footer>						
-		</body>
+				<a href="https://www.douglascollege.ca/" target="_blank"><img src="./images/douglas_logo.jpg" alt="Douglas College"></a>
+				<p class="copyright">&copy; Copyright Barber Shop Douglas College</p>
+			</footer>
+		
 	</html>

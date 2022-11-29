@@ -1,0 +1,22 @@
+fieldset {
+    max-width: 900px;
+}
+
+.divForm {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.divForm > * {
+    flex: 1 0 100px;
+    margin: 10px 10px;
+}
+
+legend {
+    background-color: black;
+    padding: 8px;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
